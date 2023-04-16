@@ -1,0 +1,32 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+.containerStyle {
+  height: 50vh;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 0.1em;
+  border-color: #bbbbbb;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.draggableStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f6fa;
+  margin: 1em;
+  border-radius: 5px;
+  border-width: 0.1em;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+.draggableIcon {
+  &:hover {
+    cursor: move;
+  }
+}
+
+.textStyle {
+  font-weight: bolder;
+  margin-bottom: 1em !important;
+}
