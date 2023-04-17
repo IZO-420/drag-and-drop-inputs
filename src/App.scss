@@ -13,3 +13,10 @@ $primary-color: #333;
 margin:1em!important;
    width: 100%!important;
 }
+
+.buttonGridStyle{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   width: 100%
+ }

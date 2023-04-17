@@ -4,6 +4,7 @@ import { Droppable } from './Components/Droppable'
 import { TableComponent } from './Components/TableComponent'
 import { type DataTableType, type DraggableType } from './Types'
 import Container from './Components/Container'
+import './App.scss'
 
 interface ComponentProps {
   components: DraggableType[]
@@ -12,7 +13,6 @@ interface ComponentProps {
 }
 
 const defaultGridStyle = {
-  diplay: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
   width: '100%'
@@ -41,8 +41,8 @@ export function Wrapper ({ components, dataTable, setDataTable }: ComponentProps
           </Droppable>
         </Container>
       </Grid>
-      <Grid xs={isMobile ? 9 : 11}></Grid>
-      <Grid xs={1} sx={gridItemStyle}>
+      <Grid xs={isMobile ? 9 : 10}></Grid>
+      <Grid xs={2} className="buttonGridStyle">
         <Button
           variant="contained"
           sx={{ margin: '1em' }}
